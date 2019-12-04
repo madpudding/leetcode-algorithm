@@ -19,11 +19,11 @@ class Solution:
     def reverse(x: int) -> int:
         negative = x < 0
         x = abs(x)
-        reversed = 0
+        rev = 0
         while x != 0:
-            reversed = reversed * 10 + x % 10
+            rev = rev * 10 + x % 10
             x //= 10
-        if reversed > 2**31 - 1:
+        if rev > 2**31 - 1:
             return 0
         else:
-            return reversed if not negative else -reversed
+            return rev if not negative else -rev
