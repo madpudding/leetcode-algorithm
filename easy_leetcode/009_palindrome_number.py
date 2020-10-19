@@ -39,7 +39,7 @@ class Solution:
 
 class Solution(object):
     def isPalindrome(self, x):
-        return str(x)==str(x)[::-1]
+        return str(x) == str(x)[::-1]
 
 # 作者：wang_ni_ma
 # 链接：https://leetcode-cn.com/problems/palindrome-number/solution/chao-xiang-xi-tu-jie-san-chong-jie-fa-9-hui-wen-sh/
