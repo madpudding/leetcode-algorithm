@@ -32,3 +32,16 @@ class Solution:
                 left += 1
                 right -= 1
         return True
+
+
+# 看到一个极简回答，惊呆了，牛逼！！！！
+
+
+class Solution(object):
+    def isPalindrome(self, x):
+        return str(x)==str(x)[::-1]
+
+# 作者：wang_ni_ma
+# 链接：https://leetcode-cn.com/problems/palindrome-number/solution/chao-xiang-xi-tu-jie-san-chong-jie-fa-9-hui-wen-sh/
+# 来源：力扣（LeetCode）
+# 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
