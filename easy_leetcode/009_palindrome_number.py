@@ -21,3 +21,14 @@ __author__ = 'mad&pudding'
 # 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        s = str(x)
+        left, right = 0, len(s) - 1
+        while left < right:
+            if left < right:
+                if s[left] != s[right]:
+                    return False
+                left += 1
+                right -= 1
+        return True
