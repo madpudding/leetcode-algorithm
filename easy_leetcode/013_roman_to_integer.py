@@ -65,6 +65,7 @@ class Solution:
         while i < len(s):
             if i < len(s) -1 and s[i:i+2] in doubles:
                 integer += doubles[s[i:i+2]]
+                i += 2
             else:
                 integer += singles[s[i]]
                 i += 1
